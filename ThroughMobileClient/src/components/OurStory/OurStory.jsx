@@ -8,7 +8,7 @@ const OurStory = () => {
     return (
         <section
             id="our-story"
-            className=" h-vh bg-cover text-white  w-screen container py-8 px-36 relative"
+            className=" h-screen bg-cover text-white  w-screen py-8 px-36 relative"
             style={{
                 backgroundColor: '#0C0216',
             }}
