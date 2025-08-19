@@ -1,0 +1,31 @@
+@import url('./assets/fonts/fonts.css');
+@import 'tailwindcss';
+
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.4s ease;
+}
+
+::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+@theme {
+    --color-brand-1: #0071f9;
+    --color-brand-2: #960076;
+    --color-brand-3: #00c3ff;
+    --color-brand-4: #5700ff;
+    --color-nav: #00284c;
+}
