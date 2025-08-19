@@ -26,12 +26,14 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="buttons text-xs flex gap-3">
-                <Link
-                    to={'/contact'}
-                    className="flex gap-2 bg-brand-3 py-2 px-4 items-center rounded-full"
-                >
-                    <TfiHeadphoneAlt size={20} /> talk to us
-                </Link>
+                <button>
+                    <Link
+                        to={'/contact'}
+                        className="flex gap-2 bg-brand-3 py-2 px-4 items-center rounded-full"
+                    >
+                        <TfiHeadphoneAlt size={20} /> talk to us
+                    </Link>
+                </button>
                 <button className="flex gap-2 bg-brand-4 py-2 px-4 items-center rounded-full">
                     <PiUserCircleLight size={20} />
                     Client Login
