@@ -9,7 +9,7 @@ const Hero = () => {
     return (
         <section
             id="home"
-            className="h-dvh bg-cover w-screen text-white flex items-center justify-between container px-36 relative"
+            className="h-vh bg-cover w-screen text-white flex items-center justify-between container px-36 relative"
             style={{ backgroundImage: `url(${bg})` }}
         >
             <span></span>

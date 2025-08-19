@@ -8,14 +8,14 @@ const OurStory = () => {
     return (
         <section
             id="our-story"
-            className=" h-dvh text-white w-screen container py-8 px-36 relative"
+            className=" h-vh bg-cover text-white  w-screen container py-8 px-36 relative"
             style={{
                 backgroundColor: '#0C0216',
             }}
             x
         >
             <div
-                className="absolute top-0 left-0 w-full h-full opacity-40"
+                className="absolute bg-cover top-0 left-0 w-full h-full opacity-40 "
                 style={{
                     backgroundImage: `url(${bg})`,
                 }}
