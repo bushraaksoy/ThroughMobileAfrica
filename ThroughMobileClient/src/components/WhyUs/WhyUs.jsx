@@ -5,14 +5,14 @@ import { motion } from 'framer-motion';
 
 const WhyUs = () => {
     return (
-        <section className="p-20" id="why-us">
-            <div className="px-10 py-20 flex justify-between items-center gap-10 border-2 border-brand-2 rounded-4xl">
+        <section className="p-20 max-sm:p-2" id="why-us">
+            <div className="px-10 py-20 flex justify-between items-center gap-10 border-2 border-brand-2 rounded-4xl max-sm:flex-col max-sm:px-2">
                 <motion.img
                     className="w-[215px]"
                     initial={{ opacity: 0, x: 30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, delay: 0.3 }}
-                    viewport={{ once: true }}
+                    // viewport={{ once: true }}
                     src={bot}
                     alt="bot"
                 />
@@ -36,7 +36,7 @@ const WhyUs = () => {
                         execution to shape perceptions, engineer engagement, and
                         control narratives in high-impact environments.
                     </motion.p>
-                    <button className=" text-white py-1.5 px-3 rounded-full bg-gradient-to-r from-brand-1 to-brand-2">
+                    <button className=" text-white  py-1.5 px-3 rounded-full bg-gradient-to-r from-brand-1 to-brand-2">
                         Reach Out To Us
                     </button>
                 </div>
@@ -44,10 +44,10 @@ const WhyUs = () => {
                     initial={{ opacity: 0, x: 24 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6, delay: 0.5 }}
-                    viewport={{ once: true }}
+                    // viewport={{ once: true }}
                     src={bot}
                     alt="bot"
-                    className="transform scale-x-[-1] w-[215px]"
+                    className="transform scale-x-[-1] w-[215px] max-sm:hidden"
                 />
             </div>
         </section>

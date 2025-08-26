@@ -6,7 +6,7 @@ const Heading1 = ({ first, second, className }) => {
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
+            // viewport={{ once: true }}
             className={className}
         >
             <span className="font-bold">{first}</span> {second}

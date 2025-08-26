@@ -8,7 +8,7 @@ const OurStory = () => {
     return (
         <section
             id="our-story"
-            className=" h-screen bg-cover text-white  w-screen py-8 px-36 relative"
+            className=" h-screen bg-cover text-white  w-screen py-8 px-36 relative max-sm:px-4"
             style={{
                 backgroundColor: '#0C0216',
             }}
@@ -18,6 +18,7 @@ const OurStory = () => {
                 className="absolute bg-cover top-0 left-0 w-full h-full opacity-40 "
                 style={{
                     backgroundImage: `url(${bg})`,
+                    // backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.), rgba(0, 0,0,0)), url(${bg})`,
                 }}
             ></div>
             <div className="z-10 flex flex-col relative">
@@ -26,22 +27,22 @@ const OurStory = () => {
                     second={'Story'}
                     className="text-3xl text-center mt-15"
                 />
-                <div className="flex items-center">
+                <div className="flex items-center max-sm:flex-col">
                     <motion.img
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.1 }}
-                        viewport={{ once: true }}
+                        // viewport={{ once: true }}
                         src={astronauts}
                         alt="astronauts"
-                        className="w-xl "
+                        className="w-xl max-sm:w-xs"
                     />
                     <motion.div
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.1 }}
-                        viewport={{ once: true }}
-                        className="text-sm mb-20"
+                        // viewport={{ once: true }}
+                        className="text-sm mb-20 max-sm:mb-0"
                     >
                         We are a precision-driven force where technology meets
                         influence, and strategy merges with innovation, crafting
