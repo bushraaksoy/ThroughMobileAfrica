@@ -12,7 +12,6 @@ const OurStory = () => {
             style={{
                 backgroundColor: '#0C0216',
             }}
-            x
         >
             <div
                 className="absolute bg-cover top-0 left-0 w-full h-full opacity-40 "

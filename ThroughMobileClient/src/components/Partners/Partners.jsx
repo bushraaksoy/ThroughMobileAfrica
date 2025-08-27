@@ -7,7 +7,7 @@ import partners3 from '../../assets/images/partners3.png';
 
 const Partners = () => {
     return (
-        <section className="p-25 max-sm:p-2" id="our-partners">
+        <section className="p-25 max-sm:px-4" id="our-partners">
             <div className=" rounded-[54px] bg-linear-to-r from-brand-1 to-brand-2 p-1">
                 <div className="rounded-[50px] bg-white p-10">
                     <Heading1
@@ -28,6 +28,7 @@ const Partners = () => {
                             width={600}
                             className="max-sm:w-xs"
                         />
+                        {/* TODO: change the images into broken down individual images */}
                         <img
                             src={partners2}
                             alt=""

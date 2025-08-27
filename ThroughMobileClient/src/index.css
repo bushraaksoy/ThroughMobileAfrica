@@ -20,7 +20,16 @@ button:hover {
     transition: 0.4s ease;
 }
 
-* {
+html,
+body {
+    overflow-x: hidden;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#what-we-do * {
     /* border: 1px solid red; */
 }
 

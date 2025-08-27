@@ -9,7 +9,7 @@ const CaseStudiesList = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             // viewport={{ once: true }}
-            className="case-studies flex flex-wrap justify-center gap-7 overflow-x-scroll py-10"
+            className="case-studies flex flex-wrap justify-center gap-7 overflow-x-scroll py-10 max-sm:px-5"
         >
             {caseStudies?.map((study) => {
                 return <CaseStudyCard key={study.id} study={study} />;

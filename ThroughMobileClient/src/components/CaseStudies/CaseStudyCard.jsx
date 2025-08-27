@@ -1,10 +1,10 @@
 const CaseStudyCard = ({ study }) => {
     return (
-        <div className="rounded-[35px] w-80 h-[400px] border border-brand-4 flex flex-col backdrop-blur-md overflow-hidden shadow-lg max-sm:w-72">
+        <div className="rounded-[35px] w-80 h-[400px] border border-brand-4 flex flex-col backdrop-blur-md overflow-hidden shadow-lg max-sm:w-full">
             <img
                 src={study?.thumbnail}
                 alt="Case Study Image"
-                className="w-full h-[250px] object-cover "
+                className="w-full h-[250px] object-cover"
             />
             <div className="px-2 pt-2 pb-5 flex flex-col justify-between h-full">
                 <div>

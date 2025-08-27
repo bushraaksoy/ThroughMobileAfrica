@@ -1,12 +1,11 @@
-import React from 'react';
 import Heading1 from '../ui/Heading1';
 import bot from '../../assets/images/bot.png';
 import { motion } from 'framer-motion';
 
 const WhyUs = () => {
     return (
-        <section className="p-20 max-sm:p-2" id="why-us">
-            <div className="px-10 py-20 flex justify-between items-center gap-10 border-2 border-brand-2 rounded-4xl max-sm:flex-col max-sm:px-2">
+        <section className="p-20 max-sm:px-4 max-sm:py-2" id="why-us">
+            <div className="px-10 py-20 flex justify-between items-center gap-10 border-2 border-brand-2 rounded-4xl max-sm:flex-col max-sm:px-4">
                 <motion.img
                     className="w-[215px]"
                     initial={{ opacity: 0, x: 30 }}
