@@ -26,12 +26,12 @@ const WhyUs = () => {
                         className="text-sm text-stone-800"
                     >
                         Through Mobile Africa is the driving force behind
-                        transformative digital influence, merging cutting-edge
+                        transformative digital influence, merging cutting edge
                         technology, behavioral intelligence, and creative
                         execution to shape perceptions, engineer engagement, and
                         control narratives in high impact environments.
                     </motion.p>
-                    <button className=" text-white shadow-md shadow-stone-500 py-1.5 px-3 rounded-full bg-gradient-to-r from-brand-1 to-brand-2">
+                    <button className=" text-white shadow shadow-stone-500 py-1.5 px-3 rounded-full bg-gradient-to-r from-brand-1 to-brand-2">
                         Reach Out To Us
                     </button>
                 </div>

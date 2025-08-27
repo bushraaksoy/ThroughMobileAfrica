@@ -15,13 +15,7 @@ const Partners = () => {
                         second={'Partners'}
                         className={'text-center text-2xl text-stone-700'}
                     />
-                    <motion.div
-                        initial={{ opacity: 0, y: 24 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.3 }}
-                        // viewport={{ once: true }}
-                        className="p-5 flex flex-col items-center gap-5"
-                    >
+                    <div className="p-5 flex flex-col items-center gap-5">
                         <img
                             src={partners1}
                             alt=""
@@ -41,7 +35,7 @@ const Partners = () => {
                             width={600}
                             className="max-sm:w-xs"
                         />
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </section>

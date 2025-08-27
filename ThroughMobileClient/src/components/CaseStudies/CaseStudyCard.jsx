@@ -15,7 +15,7 @@ const CaseStudyCard = ({ study }) => {
                         {study?.description}
                     </p>
                 </div>
-                <button className=" mt-auto ml-auto py-1 px-3 text-xs rounded-full bg-brand-4 text-white">
+                <button className="hidden mt-auto ml-auto py-1 px-3 text-xs rounded-full bg-brand-4 text-white">
                     View Study
                 </button>
             </div>

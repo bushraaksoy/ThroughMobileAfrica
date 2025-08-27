@@ -9,6 +9,7 @@ const Hero = () => {
             id="home"
             className="min-h-screen bg-cover w-screen text-white font-semibold flex items-center justify-between px-36 relative bg-linear-to-b max-sm:flex-col max-sm:px-4 max-sm:justify-center"
             style={{
+                backgroundColor: '#0C0216',
                 backgroundImage: `url(${bg})`,
                 backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(9, 7, 31, 1)), url(${bg})`,
             }}

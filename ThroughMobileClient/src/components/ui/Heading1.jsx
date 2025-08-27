@@ -6,7 +6,7 @@ const Heading1 = ({ first, second, style }) => {
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            // viewport={{ once: true }}
+            viewport={{ once: true }}
             style={style}
             className={'text-4xl text-stone-700 text-center py-10'}
         >
