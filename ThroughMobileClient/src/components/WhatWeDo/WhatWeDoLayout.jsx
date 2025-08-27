@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { FaChevronRight } from 'react-icons/fa';
 
 const WhatWeDoLayout = ({ image, title, subtitle, points }) => {
-    console.log(points);
     return (
         <div className="market flex gap-12 items-center justify-center text-stone-800 font-semibold max-sm:flex-col">
             <img width={500} src={image} className="max-sm:w-xs" />
