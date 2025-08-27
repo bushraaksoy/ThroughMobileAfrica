@@ -19,7 +19,7 @@ const FootprintText = () => {
                 </p>
                 <p>
                     We’ve co-created civic tools, youth campaigns, and digital
-                    platforms tailored to local realities—driving transformation
+                    platforms tailored to local realities driving transformation
                     across the continent through digital-first innovation.
                 </p>
             </motion.div>

@@ -16,7 +16,7 @@ import {
 
 const Navbar = () => {
     return (
-        <div className="fixed top-0 right-0 w-full z-50 flex justify-between items-center bg-nav/90 backdrop-blur-sm text-white border-b border-b-gray-500 py-2 px-24 max-sm:px-4 ">
+        <div className="fixed top-0 right-0 w-full z-50 flex justify-between items-center bg-nav/90 backdrop-blur-sm text-white border-b border-b-gray-500  py-2 px-20 max-sm:px-4 ">
             <div className="flex items-center gap-10">
                 <LogoWhite />
                 <ul className="max-sm:hidden flex gap-6 text-sm">
@@ -52,7 +52,9 @@ const Navbar = () => {
                 </button>
             </div>
 
-            <NavSidebar />
+            <div className="md:hidden">
+                <NavSidebar />
+            </div>
         </div>
     );
 };
@@ -61,7 +63,7 @@ export default Navbar;
 
 const NavSidebar = () => {
     return (
-        <DropdownMenu className="md:hidden">
+        <DropdownMenu>
             <DropdownMenuTrigger>
                 <FiMenu size={25} />
             </DropdownMenuTrigger>

@@ -8,13 +8,13 @@ const OurStory = () => {
     return (
         <section
             id="our-story"
-            className=" h-screen bg-cover text-white  w-screen py-8 px-36 relative max-sm:px-4"
+            className=" h-full bg-cover text-white  w-screen py-20 px-36 relative max-sm:px-4"
             style={{
                 backgroundColor: '#0C0216',
             }}
         >
             <div
-                className="absolute bg-cover top-0 left-0 w-full h-full opacity-40 "
+                className="absolute bg-cover top-0 left-0 w-full h-full opacity-30 "
                 style={{
                     backgroundImage: `url(${bg})`,
                     // backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.), rgba(0, 0,0,0)), url(${bg})`,
@@ -24,7 +24,7 @@ const OurStory = () => {
                 <Heading1
                     first={'Our'}
                     second={'Story'}
-                    className="text-3xl text-center mt-15"
+                    style={{ color: '#ffffff' }}
                 />
                 <div className="flex items-center max-sm:flex-col">
                     <motion.img
@@ -34,19 +34,19 @@ const OurStory = () => {
                         // viewport={{ once: true }}
                         src={astronauts}
                         alt="astronauts"
-                        className="w-xl max-sm:w-xs"
+                        className="w-xl max-sm:w-xs brightness-80"
                     />
                     <motion.div
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.1 }}
                         // viewport={{ once: true }}
-                        className="text-sm mb-20 max-sm:mb-0"
+                        className="mb-20 font-medium"
                     >
-                        We are a precision-driven force where technology meets
+                        We are a precision driven force where technology meets
                         influence, and strategy merges with innovation, crafting
-                        solutions that define outcomes. Through a fusion of
-                        AI-powered insights, digital mastery, and creative
+                        solutions that define outcomes. Through a fusion of AI
+                        powered insights, digital mastery, and creative
                         intelligence, we transform complexity into controlled
                         narratives, ensuring our partners lead the conversation,
                         set the agenda, and shape the future.

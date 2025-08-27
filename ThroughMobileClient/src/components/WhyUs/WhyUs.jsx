@@ -16,11 +16,7 @@ const WhyUs = () => {
                     alt="bot"
                 />
                 <div className="flex flex-col justify-between text-center gap-10">
-                    <Heading1
-                        first={'Why Work'}
-                        second={'With Us?'}
-                        className={'text-2xl text-stone-700 text-center'}
-                    />
+                    <Heading1 first={'Why Work'} second={'With Us?'} />
 
                     <motion.p
                         initial={{ opacity: 0, y: 30 }}
@@ -33,9 +29,9 @@ const WhyUs = () => {
                         transformative digital influence, merging cutting-edge
                         technology, behavioral intelligence, and creative
                         execution to shape perceptions, engineer engagement, and
-                        control narratives in high-impact environments.
+                        control narratives in high impact environments.
                     </motion.p>
-                    <button className=" text-white  py-1.5 px-3 rounded-full bg-gradient-to-r from-brand-1 to-brand-2">
+                    <button className=" text-white shadow-md shadow-stone-500 py-1.5 px-3 rounded-full bg-gradient-to-r from-brand-1 to-brand-2">
                         Reach Out To Us
                     </button>
                 </div>

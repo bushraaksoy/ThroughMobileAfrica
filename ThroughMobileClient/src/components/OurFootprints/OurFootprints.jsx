@@ -6,7 +6,7 @@ const OurFootprints = () => {
     return (
         <section
             id="our-footprints"
-            className="h-96 bg-cover text-white p-12 text-center max-sm:h-full max-sm:px-4 "
+            className=" bg-cover text-white p-12 text-center max-sm:h-full max-sm:px-4 "
         >
             <Heading1
                 first={'Out'}

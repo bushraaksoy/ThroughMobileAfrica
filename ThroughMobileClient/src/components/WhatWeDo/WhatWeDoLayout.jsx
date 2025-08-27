@@ -23,7 +23,7 @@ const WhatWeDoLayout = ({ image, title, subtitle, points }) => {
                         })}
                     </ul>
                 </div>
-                <button className=" flex items-center justify between text-xs gap-2 text-white font-light rounded-full py-1.5 px-3 bg-linear-to-r from-brand-1 to-brand-2">
+                <button className="shadow-stone-500 shadow-md  flex items-center justify between text-xs gap-2 text-white font-light rounded-full py-1.5 px-3 bg-linear-to-r from-brand-1 to-brand-2">
                     Learn More
                     <FaChevronRight className="" />
                 </button>
