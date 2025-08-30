@@ -13,6 +13,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { navLinks } from '@/utils/constants';
 
 const Navbar = () => {
     return (
@@ -20,21 +21,11 @@ const Navbar = () => {
             <div className="flex items-center gap-10">
                 <LogoWhite />
                 <ul className="max-sm:hidden flex gap-6 text-sm">
-                    <li>
-                        <a href={'/#'}>Home</a>
-                    </li>
-                    <li>
-                        <a href={'/#our-story'}>Our Story</a>
-                    </li>
-                    <li>
-                        <a href={'/#what-we-do'}>What we do</a>
-                    </li>
-                    <li>
-                        <a href={'/#our-clients'}>Our Clients</a>
-                    </li>
-                    <li>
-                        <a href={'/#our-partners'}>Partners</a>
-                    </li>
+                    {navLinks?.map((navLink, inx) => (
+                        <li className="hover:text-brand-3 hover:-translate-y-0.5 transition-all duration-300">
+                            <a href={navLink.href}>{navLink.title}</a>
+                        </li>
+                    ))}
                 </ul>
             </div>
             <div className="flex text-xs  gap-3 hidden max-sm:hidden ">
