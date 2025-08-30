@@ -37,7 +37,7 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <div className="max-sm:hidden flex text-xs  gap-3">
+            <div className="flex text-xs  gap-3 hidden max-sm:hidden ">
                 <button>
                     <Link
                         to={'/contact'}

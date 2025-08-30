@@ -27,7 +27,7 @@ const OurStory = () => {
                     style={{ color: '#ffffff' }}
                 />
                 <div className="flex items-center max-sm:flex-col">
-                    <motion.img
+                    <img
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.1 }}
@@ -41,7 +41,7 @@ const OurStory = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.1 }}
                         // viewport={{ once: true }}
-                        className="mb-20 font-medium"
+                        className="mb-20  max-sm:text-center font-light"
                     >
                         We are a precision driven force where technology meets
                         influence, and strategy merges with innovation, crafting

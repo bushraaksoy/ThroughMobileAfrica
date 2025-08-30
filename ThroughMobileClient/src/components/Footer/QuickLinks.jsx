@@ -11,7 +11,7 @@ const QuickLinks = () => {
                 <a href="#our-partners">Our Partners</a>
                 <a href="#our-clients">Our Clients</a>
                 <a href="#client-login">Client Login</a>
-                <a href="/contact">Contact Us</a>
+                {/* <a href="/contact">Contact Us</a> */}
             </div>
         </div>
     );

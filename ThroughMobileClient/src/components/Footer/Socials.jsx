@@ -3,11 +3,13 @@ import { FiFacebook, FiInstagram, FiLinkedin } from 'react-icons/fi';
 import { FaTiktok, FaWhatsapp } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
+const socials = [{ icon: '', url: '' }];
+
 const Socials = () => {
     return (
         <div>
             <img width={150} src={logo} alt="logo" />
-            <div className="flex gap-4 mt-4  hover:text-brand-2">
+            <div className="flex gap-4 mt-4 ">
                 <FiFacebook size={26} />
                 <FiInstagram size={26} />
                 <FiLinkedin size={26} />

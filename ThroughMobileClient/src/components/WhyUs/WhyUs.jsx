@@ -31,7 +31,7 @@ const WhyUs = () => {
                         execution to shape perceptions, engineer engagement, and
                         control narratives in high impact environments.
                     </motion.p>
-                    <button className=" text-white shadow shadow-stone-500 py-1.5 px-3 rounded-full bg-gradient-to-r from-brand-1 to-brand-2">
+                    <button className="hidden text-white shadow shadow-stone-500 py-1.5 px-3 rounded-full bg-gradient-to-r from-brand-1 to-brand-2">
                         Reach Out To Us
                     </button>
                 </div>
