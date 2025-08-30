@@ -6,15 +6,17 @@ const HeroText = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="hero-text w-sm flex flex-col items-start font-light gap-5 max-sm:w-full max-sm:items-center"
+            className="hero-text w-[410px] flex flex-col items-start font-light gap-3  max-sm:w-full max-sm:items-center"
         >
             <div className="max-sm:text-center">
-                <h1 className="text-3xl">Engineering Influence</h1>
+                <h1 className="text-3xl font-extrabold">
+                    Engineering Influence
+                </h1>
                 <h2 className="text-xl font-medium">
                     Crafting Unstopable Narratives
                 </h2>
             </div>
-            <div className="text-sm max-sm:text-sm max-sm:text-center">
+            <div className="text-sm max-sm:text-sm max-sm:text-center text-stone-200">
                 Through Mobile Africa is a powerhouse of strategic digital
                 influence, creative mastery, and behavioural intelligence
             </div>
