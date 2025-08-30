@@ -19,7 +19,7 @@ const ContactForm = () => {
     return (
         <form
             // onSubmit={handleStubmit(onSubmit)}
-            className="bg-gray-100 rounded-3xl p-18 flex flex-col gap-6"
+            className="bg-gray-100 rounded-3xl p-18 flex flex-col gap-6 max-sm:px-4"
         >
             <div className="title ">
                 <h1 className="text-stone-800 font-bold text-3xl">
@@ -41,7 +41,7 @@ const ContactForm = () => {
                     name="newsletter"
                     id=""
                     value="newsletter"
-                    className="appearance-none h-4 w-4 rounded-sm border-2 border-brand-2 bg-white cursor-pointer checked:before:content-[''] checked:before:block checked:before:w-2 checked:before:h-2 checked:before:bg-brand-2 checked:before:mt-0.5 checked:before:ml-0.5 checked:before:rounded-xs "
+                    className=" appearance-none h-4 w-4 rounded-sm border-2 border-brand-2 bg-white cursor-pointer checked:before:content-[''] checked:before:block checked:before:w-2 checked:before:h-2 checked:before:bg-brand-2 checked:before:mt-0.5 checked:before:ml-0.5 checked:before:rounded-xs "
                 />
                 I would like to receive news and newsletters / articles about
                 our latest products
@@ -77,11 +77,11 @@ const RadioInput = ({ name, value }) => {
 const UserInfo = () => {
     return (
         <div className="inputs py-10 flex flex-col gap-8">
-            <div className="flex gap-10">
+            <div className="flex gap-10 max-sm:gap-3">
                 <ContactTextInput placeholder="Full Name" />
                 <ContactTextInput placeholder="Email Address" />
             </div>
-            <div className="flex gap-10">
+            <div className="flex gap-10 max-sm:gap-3">
                 <ContactTextInput placeholder="Phone No" />
                 <ContactTextInput placeholder="Organization Name" />
             </div>
@@ -94,8 +94,8 @@ const UserInterest = () => {
     return (
         <div className="interest">
             <h2>What are you interested in engaging us with ?</h2>
-            <div className="radios py-10 flex flex-col gap-5 text-xs text-stone-700">
-                <span className="flex justify-between ">
+            <div className="radios py-10 flex justify-between text-xs text-stone-700 flex-wrap max-sm:gap-10">
+                <span className="flex flex-col items-start gap-10">
                     <RadioInput
                         name={'interest'}
                         value={
@@ -104,16 +104,20 @@ const UserInterest = () => {
                     />
                     <RadioInput
                         name={'interest'}
-                        value={'AI driven Technology Development'}
-                    />
-                    <RadioInput name={'interest'} value={'All of the above'} />
-                </span>
-                <span className="flex justify-between">
-                    <RadioInput
-                        name={'interest'}
                         value={'Creative Expression (Story Alchemist)'}
                     />
+                </span>
+
+                <span className="flex flex-col items-start gap-10">
+                    <RadioInput
+                        name={'interest'}
+                        value={'AI driven Technology Development'}
+                    />
                     <RadioInput name={'interest'} value={'Partnership'} />
+                </span>
+
+                <span className="flex flex-col items-start gap-10">
+                    <RadioInput name={'interest'} value={'All of the above'} />
                     <RadioInput name={'interest'} value={'Other'} />
                 </span>
             </div>
