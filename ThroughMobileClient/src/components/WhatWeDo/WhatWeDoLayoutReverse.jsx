@@ -18,7 +18,10 @@ const WhatWeDoLayoutReverse = ({ image, title, subtitle, points }) => {
                     <ul className="text-xs mt-3">
                         {points.map((point, inx) => {
                             return (
-                                <li className="flex items-center" key={inx}>
+                                <li
+                                    className="flex items-center font-normal"
+                                    key={inx}
+                                >
                                     <span className="text-4xl text-[#3F8CFF] leading-none">
                                         •
                                     </span>
