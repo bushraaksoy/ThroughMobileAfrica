@@ -17,9 +17,18 @@ const WhatWeDoLayout = ({ image, title, subtitle, points }) => {
                 <h2 className="text-xl uppercase">{title}</h2>
                 <div className="max-sm:flex max-sm:flex-col max-sm:items-center">
                     {subtitle && <h2>{subtitle}</h2>}
-                    <ul className="text-xs list-disc marker:text-brand-3 marker:text-3xl mt-3 ml-7 ">
+                    <ul className="text-xs mt-3">
                         {points.map((point, inx) => {
-                            return <li key={inx}>{point}</li>;
+                            return (
+                                <li className="flex items-center" key={inx}>
+                                    <span className="text-4xl text-[#3F8CFF] leading-none">
+                                        •
+                                    </span>
+                                    <span className="ml-2 text-xs">
+                                        {point}
+                                    </span>
+                                </li>
+                            );
                         })}
                     </ul>
                 </div>
