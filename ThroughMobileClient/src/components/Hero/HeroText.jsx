@@ -9,9 +9,7 @@ const HeroText = () => {
             className="hero-text w-[410px] flex flex-col items-start font-light gap-3  max-sm:w-full max-sm:items-center"
         >
             <div className="max-sm:text-center">
-                <h1 className="text-3xl font-extrabold">
-                    Engineering Influence
-                </h1>
+                <h1 className="text-3xl font-light">Engineering Influence</h1>
                 <h2 className="text-xl font-medium">
                     Crafting Unstopable Narratives
                 </h2>

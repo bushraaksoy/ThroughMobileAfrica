@@ -22,7 +22,7 @@ const Navbar = () => {
                 <LogoWhite />
                 <ul className="max-sm:hidden flex gap-6 text-sm">
                     {navLinks?.map((navLink, inx) => (
-                        <li className="hover:text-brand-3 hover:-translate-y-0.5 transition-all duration-300">
+                        <li className="tracking-[2px] hover:text-brand-3 hover:-translate-y-[2px] transition-all duration-300 font-[400]  ">
                             <a href={navLink.href}>{navLink.title}</a>
                         </li>
                     ))}

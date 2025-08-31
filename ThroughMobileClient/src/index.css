@@ -4,14 +4,8 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-} */
-
 body {
-    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-family: 'Poppins', 'Montserrat', sans-serif;
 }
 
 button:hover {
@@ -29,13 +23,9 @@ img {
     height: auto;
 }
 
-#what-we-do * {
-    /* border: 1px solid red; */
-}
-
-::-webkit-scrollbar {
-    height: 0;
-    width: 0;
+#follower {
+    position: fixed;
+    pointer-events: none;
 }
 
 @theme {
