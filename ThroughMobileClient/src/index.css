@@ -23,6 +23,11 @@ img {
     height: auto;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
 #follower {
     position: fixed;
     pointer-events: none;

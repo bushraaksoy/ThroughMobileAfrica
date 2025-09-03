@@ -41,7 +41,7 @@ const OurStory = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.1 }}
                         // viewport={{ once: true }}
-                        className="mb-20  max-sm:text-center font-light"
+                        className="text-sm mb-20  max-sm:text-center font-light"
                     >
                         We are a precision driven force where technology meets
                         influence, and strategy merges with innovation, crafting
