@@ -1,6 +1,6 @@
 import { TfiHeadphoneAlt } from 'react-icons/tfi';
 import { PiUserCircleLight } from 'react-icons/pi';
-import { Link } from 'react-router';
+import { Link, useLocation } from 'react-router';
 import LogoWhite from '../ui/LogoWhite';
 import { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
@@ -16,16 +16,36 @@ import {
 import { navLinks } from '@/utils/constants';
 
 const Navbar = () => {
+    const { hash } = useLocation();
+    console.log(hash);
+
     return (
         <div className="fixed top-0 right-0 w-full z-50 flex justify-between items-center bg-nav/90 backdrop-blur-sm text-white border-b border-b-gray-500  py-2 px-20 max-sm:px-4 ">
             <div className="flex items-center gap-10">
                 <LogoWhite />
-                <ul className="max-sm:hidden flex gap-6 text-sm">
-                    {navLinks?.map((navLink, inx) => (
-                        <li className="tracking-[2px] hover:text-brand-3 hover:-translate-y-[2px] transition-all duration-300 font-[400]  ">
-                            <a href={navLink.href}>{navLink.title}</a>
-                        </li>
-                    ))}
+                <ul className="navbar max-sm:hidden flex gap-6 text-sm">
+                    {navLinks?.map((navLink, inx) => {
+                        console.log(`/${hash}`, navLink.href);
+                        console.log(`/${hash}` == navLink.href);
+                        return (
+                            <li
+                                key={inx}
+                                className=" relative hover:text-brand-3 tracking-[2px] transition-all duration-300 font-[400]  "
+                            >
+                                <a className="" href={navLink.href}>
+                                    {navLink.title}
+                                </a>
+                                <span
+                                    style={{
+                                        display:
+                                            `/${hash}` == navLink.href
+                                                ? 'block'
+                                                : 'none',
+                                    }}
+                                ></span>
+                            </li>
+                        );
+                    })}
                 </ul>
             </div>
             <div className="flex text-xs  gap-3 hidden max-sm:hidden ">

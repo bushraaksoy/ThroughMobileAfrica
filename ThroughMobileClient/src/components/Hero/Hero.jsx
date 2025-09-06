@@ -2,6 +2,7 @@ import React from 'react';
 import bg from '../../assets/images/hero.png';
 import { FaAngleDown } from 'react-icons/fa';
 import HeroText from './HeroText';
+import { IoIosArrowDown } from 'react-icons/io';
 
 const Hero = () => {
     document.addEventListener('mousemove', function (e) {
@@ -17,7 +18,7 @@ const Hero = () => {
             style={{
                 backgroundColor: '#0C0216',
                 backgroundImage: `url(${bg})`,
-                backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(9, 7, 31, 1)), url(${bg})`,
+                // backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0),rgba(0,0,0,0), rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0), rgba(0,0,0,0), rgba(9, 7, 31, 1)), url(${bg})`,
             }}
         >
             <div
@@ -28,12 +29,14 @@ const Hero = () => {
             <HeroText />
             <a
                 href="/#our-story"
-                className="text-muted-foreground hover:text-brand-2  absolute bottom-3 right-1/2  flex flex-col items-center  max-sm:right-[40%] max-sm:bottom-30 "
+                className="text-muted-foreground hover:text-brand-2  absolute bottom-3 right-[49%]  flex flex-col items-center  max-sm:right-[40%] max-sm:bottom-30 "
             >
-                <span className="text-xs hover:text-brand-2">Scroll Down</span>
-                <FaAngleDown
+                <span className=" hidden text-xs hover:text-brand-2">
+                    Scroll Down
+                </span>
+                <IoIosArrowDown
                     className="animate-bounce hover:text-brand-2"
-                    size={25}
+                    size={28}
                 />
             </a>
         </section>

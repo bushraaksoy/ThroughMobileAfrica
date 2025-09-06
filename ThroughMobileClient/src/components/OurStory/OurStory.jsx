@@ -8,7 +8,7 @@ const OurStory = () => {
     return (
         <section
             id="our-story"
-            className=" h-full bg-cover text-white  w-screen py-20 px-36 relative max-sm:px-4"
+            className=" h-full bg-cover text-stone-300  w-screen py-20 px-36 relative max-sm:px-4"
             style={{
                 backgroundColor: '#0C0216',
             }}
@@ -24,13 +24,13 @@ const OurStory = () => {
                 <Heading1
                     first={'Our'}
                     second={'Story'}
-                    style={{ color: '#ffffff' }}
+                    style={{ color: '#a6a09b' }}
                 />
                 <div className="flex items-center max-sm:flex-col">
                     <img
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.8, delay: 0.1 }}
+                        // initial={{ opacity: 0, scale: 0.9 }}
+                        // whileInView={{ opacity: 1, scale: 1 }}
+                        // transition={{ duration: 0.8, delay: 0.1 }}
                         // viewport={{ once: true }}
                         src={astronauts}
                         alt="astronauts"
